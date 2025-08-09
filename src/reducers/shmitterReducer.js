@@ -21,7 +21,7 @@ export const shmitterReducer = (state, action) => {
         case CHANGE_FOLLOWERS:
             return {...state, stats: {...state.stats, followers: Math.max(0, state.stats.followers + action.payload)}};
         case CHANGE_FOLLOWING:
-            return {...state,stats: {...state.stats, following: Math.max(0, state.stats.followers + action.payload)}};
+            return {...state,stats: {...state.stats, following: Math.max(0, state.stats.following + action.payload)}};
         default:
             return state;
     }

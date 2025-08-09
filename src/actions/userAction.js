@@ -19,6 +19,6 @@ export const changeFollowers= followers => ({
 });
 
 export const changeFollowing= following => ({
-    type: CHANGE_FOLLOWERS,
+    type: CHANGE_FOLLOWING,
     payload: following
 });
